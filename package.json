@@ -1,0 +1,37 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "description": "\"JavaScript Development Env\"",
+  "scripts": {
+    "start": "babel-node scripts/server.js",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel start localtunnel",
+    "preshare": "node scripts/Startmessage.js",
+    "build": "webpack",
+    "format:all": "prettier --write \"src/**/*.js\""
+  },
+  "author": "Boogie",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "babel-loader": "^9.1.3",
+    "eslint": "^9.5.0",
+    "express": "^4.19.2",
+    "html-webpack-plugin": "^5.6.0",
+    "localtunnel": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "open": "^10.1.0",
+    "prettier": "^3.3.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^7.2.1"
+  },
+  "type": "module",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
+}
